@@ -82,27 +82,6 @@ Fields:
 
 Each appointment connects a **client** with a **service**.
 
----
-
-## API Endpoints
-
-The API provides basic CRUD operations.
-
-### Clients
-
-* `GET /api/clients/` → Get all clients
-* `POST /api/clients/` → Create a new client
-
-### Services
-
-* `GET /api/services/` → Get all services
-* `POST /api/services/` → Create a service
-
-### Appointments
-
-* `GET /api/appointments/` → View appointments
-* `POST /api/appointments/` → Book an appointment
-* `DELETE /api/appointments/{id}/` → Delete appointment
 
 ---
 
@@ -154,8 +133,3 @@ Open in browser:
 http://127.0.0.1:8000/api/
 ```
 
-
-
-
-
-If you want, I can also help you add a **small architecture diagram and API flow diagram** to this README so it looks **more professional for GitHub and internships**.
