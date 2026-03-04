@@ -1,10 +1,11 @@
+
+
 # Appointment Booking API
 
-This project is a simple **Appointment Booking API** built using **Django** and **Django REST Framework (DRF)**.
-The main idea of this project is to manage appointments between **clients** and **services**.
+This project is a simple Appointment Booking API built using Django and Django REST Framework (DRF).
+The main idea of this project is to manage appointments between clients and services.
 
 For example, a client can book a service like a consultation or haircut at a specific date and time. The API stores all the information and allows creating, viewing, updating, and deleting records.
-
 
 ---
 
@@ -20,7 +21,7 @@ For example, a client can book a service like a consultation or haircut at a spe
 
 ## Project Structure
 
-The project contains a Django project and an app called **booking**.
+The project contains a Django project and an app called booking.
 
 ```
 appointment_project
@@ -38,16 +39,16 @@ appointment_project
     ├── urls.py
 ```
 
-* **models.py** → defines database tables
-* **serializers.py** → converts database objects to JSON
-* **views.py** → handles API logic
-* **urls.py** → connects API endpoints
+* models.py → defines database tables
+* serializers.py → converts database objects to JSON
+* views.py → handles API logic
+* urls.py → connects API endpoints
 
 ---
 
 # API Endpoints
 
-The API supports **full CRUD operations** for Clients, Services, and Appointments.
+The API supports full CRUD operations for Clients, Services, and Appointments.
 
 CRUD = Create, Read, Update, Delete.
 
@@ -91,7 +92,6 @@ CRUD = Create, Read, Update, Delete.
 | DELETE | `/api/appointments/{id}/` | Delete appointment           |
 
 ---
-
 
 ## How to Run the Project
 
@@ -139,4 +139,7 @@ Open in browser:
 ```
 http://127.0.0.1:8000/api/
 ```
+
+---
+
 
