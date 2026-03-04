@@ -45,43 +45,50 @@ appointment_project
 
 ---
 
-## Database Design
+# API Endpoints
 
-The system contains three main models.
+The API supports **full CRUD operations** for Clients, Services, and Appointments.
 
-### Client
+CRUD = Create, Read, Update, Delete.
 
-Stores information about the customer.
+---
 
-Fields:
+# Clients
 
-* name
-* email
+| Method | Endpoint             | Description                     |
+| ------ | -------------------- | ------------------------------- |
+| GET    | `/api/clients/`      | Get all clients                 |
+| GET    | `/api/clients/{id}/` | Get a specific client           |
+| POST   | `/api/clients/`      | Create a new client             |
+| PUT    | `/api/clients/{id}/` | Update entire client details    |
+| PATCH  | `/api/clients/{id}/` | Partially update client details |
+| DELETE | `/api/clients/{id}/` | Delete a client                 |
 
-### Service
+---
 
-Represents the services available for booking.
+# Services
 
-Fields:
+| Method | Endpoint              | Description              |
+| ------ | --------------------- | ------------------------ |
+| GET    | `/api/services/`      | Get all services         |
+| GET    | `/api/services/{id}/` | Get a specific service   |
+| POST   | `/api/services/`      | Create a new service     |
+| PUT    | `/api/services/{id}/` | Update entire service    |
+| PATCH  | `/api/services/{id}/` | Partially update service |
+| DELETE | `/api/services/{id}/` | Delete a service         |
 
-* title
-* description
-* price
+---
 
-### Appointment
+# Appointments
 
-Stores appointment details.
-
-Fields:
-
-* client
-* service
-* appointment_date
-* appointment_time
-* status
-
-Each appointment connects a **client** with a **service**.
-
+| Method | Endpoint                  | Description                  |
+| ------ | ------------------------- | ---------------------------- |
+| GET    | `/api/appointments/`      | View all appointments        |
+| GET    | `/api/appointments/{id}/` | View a specific appointment  |
+| POST   | `/api/appointments/`      | Book an appointment          |
+| PUT    | `/api/appointments/{id}/` | Update entire appointment    |
+| PATCH  | `/api/appointments/{id}/` | Partially update appointment |
+| DELETE | `/api/appointments/{id}/` | Delete appointment           |
 
 ---
 
