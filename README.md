@@ -5,7 +5,6 @@ The main idea of this project is to manage appointments between **clients** and 
 
 For example, a client can book a service like a consultation or haircut at a specific date and time. The API stores all the information and allows creating, viewing, updating, and deleting records.
 
-This project helped me understand how backend systems work, especially how APIs connect applications with databases.
 
 ---
 
